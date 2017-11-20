@@ -22,7 +22,7 @@ Starting your first data science project using a `cookie-cutter` template for cr
 
 `github` [@akshi8](https://github.com/akshi8)
 
-**Latest Update** : November 18th, 2017
+**Latest Update** : November 19th, 2017
 
 ## Project Overview
 ------------------------------------------------------------------------------------------------------
@@ -30,25 +30,28 @@ The figure below shows the steps involved in a typical data science workflow.
 
  ![](DSF.png)
 
- A good workflow for a particular team depends on the tasks, goals,
+A good workflow for a particular team depends on the tasks, goals,
 and values of that team, whether they want to make their work
 faster, more efficient, correct, compliant, agile, transparent, or
 reproducible
 
+Project directory setup is the preliminary step before getting diving into data, code or analysis. For this reason a cookie_cutter template of creating project repo can prove very useful
+
 > **Step 1**: `Data and Code Organization`
 
-The [`Cookie-Cutter`](cookie_cutter.sh) shell script creates a basic directory structure that might be useful for set-up a Data Science project
 
 ![](cookie_cutter.png)
 
 
-* The shell script first creates the main project directory `data_science_project` under which other sub-directories containing data, scripts, visualizations will be created
+* The cookie-cutter shell script first creates the main project directory like `data_science_project` or anything based on the `user input` under which other sub-directories containing data, scripts, visualizations, documentation etc. will be created
 
-* The License File for this project is included as [`LICENSE`](LICENSE.txt) containing the copyright and legal notices
+* The License File for this project is created as `LICENSE.md` containing the copyright and legal notices based on the username and date of initializing this project
 
-* The Sub-directories created using the shell script
+* The sub-directories created using shell script will initially have `test` files so that the user doesn't push empty directories to github
 
- `data_science_project`
+* The project directory map will look something like this:
+
+ `data_science_project` or `@project_name`
 
   1. `citations` : For including any References or Citation docs for this project
   2. `data` :
@@ -59,33 +62,37 @@ The [`Cookie-Cutter`](cookie_cutter.sh) shell script creates a basic directory s
     > Based on the various stages of the data processing, the raw, external and processed data can be stored
 
   3. `docs`: For storing import docs, discussions or scripts for this project
-  4. `models` : Model outputs and iterations
-  5. `notebooks` : storing `R`, `python` `Jupyter` notebooks
-  6. `reports` :
+  4. `emails` : Saving important emails and attachments
+  5. `from_team`: Any miscellaneous data or document from other team members that is relevant for the project
+  6. `models` : Model outputs and iterations
+  7. `notebooks` : storing `R`, `python` `Jupyter` notebooks
+  8. `reports` :
       * `images`:
       * `figures`
 
     > Includes important figures and images from visualizations
 
-  7. `src` : source code
-  8. `from_team`: Any miscellaneous data or document from other team members that is relevant for the project
+  9. `src` : source code
 
+  `LICENSE.md` : License and copyright files
 
-## Steps to mirror this repo
+  `README.md`  : Project description which can be updated later by the user
 
-* git clone
+## Steps to clone this repo
+
+* `git clone`
 
     Clone this repo using the below code snippet in command-line
 
       git clone https://github.com/akshi8/data_sci_project.git
 
-* cookie_cutter shell script
+* `cookie_cutter shell script`
 
   Now that you have the README, LICENSE and cookie_cutter.sh file run the shell script
 
   For this you will be creating your own project repo locally with all necessary files and directories by running the following
 
-  **Make sure you make the cloned repo is your current directory**
+  **Make sure you make the cloned repo as your current directory**
 
       cd data_sci_project
       bash cookie_cutter.sh
@@ -94,9 +101,10 @@ The [`Cookie-Cutter`](cookie_cutter.sh) shell script creates a basic directory s
 
 ## Git push
 
-* The `cookie_cutter` shell script also creates a mirror of your local data science repo that you just created by pushing it to you `github` repo
+* The `cookie_cutter` shell script also creates a clone of your local data science repo that you just created by pushing it to your `github` space
 
 * The code has been added to the shell script itself
+
 =================================================================================
 ### Issues
 
