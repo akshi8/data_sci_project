@@ -67,7 +67,7 @@ The [`Cookie-Cutter`](cookie_cutter.sh) shell script creates a basic directory s
 
     > Includes important figures and images from visualizations
 
-  7. `src` : source code 
+  7. `src` : source code
   8. `from_team`: Any miscellaneous data or document from other team members that is relevant for the project
 
 
@@ -83,13 +83,21 @@ The [`Cookie-Cutter`](cookie_cutter.sh) shell script creates a basic directory s
 
   Now that you have the README, LICENSE and cookie_cutter.sh file run the shell script
 
+  For this you will be creating your own project repo locally with all necessary files and directories by running the following
+
   **Make sure you make the cloned repo is your current directory**
 
+      cd data_sci_project
       bash cookie_cutter.sh
 
 > There you have it, your data-science project empty directory structure to begin with your DS project
 
+## Git push
+
+* The `cookie_cutter` shell script also creates a mirror of your local data science repo that you just created by pushing it to you `github` repo
+
+* The code has been added to the shell script itself
 =================================================================================
 ### Issues
 
-Feel free you add issues on the github
+Add issues on this github repo is case of any trouble
