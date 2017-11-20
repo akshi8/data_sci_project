@@ -21,6 +21,8 @@ cd ..
 
 cd $new_repo
 
+git init
+
 ## New README for user
 touch README.md
 
